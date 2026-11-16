@@ -18,3 +18,13 @@ function getBadgeCategorie(string $code): array
             return ['libelle' => 'Inconnue'];
     }
 }
+function filtrerUrgences(array $listePatients, int $niveau): array
+{
+    if ($niveau === 0) {
+        return $listePatients;
+    }
+
+    return array_filter($listePatients, function($patient) use ($niveau) {
+        return isset($patient['niveauUrgence']) && $patient['niveauUrgence'] === $niveau;
+    });
+}

@@ -1,0 +1,131 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9; 
+    color: #1e293b;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+}
+
+
+.patients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    border-top: 5px solid #cbd5e1; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+
+.badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+
+.card p {
+    font-size: 0.92rem;
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.card p strong {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+
+.card.urgence-absolue {
+    border-top-color: #dc2626;
+}
+.card.urgence-absolue .badge {
+    background-color: #dc2626;
+}
+
+
+.card.urgence-relative {
+    border-top-color: #f59e0b;
+}
+.card.urgence-relative .badge {
+    background-color: #f59e0b;
+}
+
+
+.card.consultation-standard {
+    border-top-color: #16a34a;
+}
+.card.consultation-standard .badge {
+    background-color: #16a34a;
+}
+
+
+.recap-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 22px 26px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.recap-box h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.recap-box p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.recap-box ul {
+    margin-left: 20px;
+    color: #334155;
+    font-size: 0.92rem;
+}
+
+.recap-box li {
+    margin-bottom: 4px;
+}
